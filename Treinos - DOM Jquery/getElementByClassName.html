@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - getElementByClassName</title>
+	
+</head>
+<body>
+
+	<div class="urso">AARG</div> <!-- Ao inves de criar uma ID eu criei duas div's 'class' --> 
+	<div class="urso">AARG</div> 
+	<div class="sherk">UHUU</div>
+	<script>
+		console.log (
+			document.getElementsByClassName("urso") // O comando está no PLURAL!! 'getElements' isso significa que vai retornar um conjunto.
+			// Mas e se eu quiser retornar apenas o primeiro class 'urso'? (Indicice):
+			document.getElementsByClassName("urso")[0] // Ai o [0] é o primeiro indice (vc lembra os bagui de array, é algo parecido [seletores])
+		)
+	</script>
+	
+	<h1>Babaquei</h1>
+	<script>
+		console.log (
+			document.getElementsByTagName("h1") // Também tem por tags de HTML (Ele acessa todas as informações da tag.)
+		)
+	</script>
+</body>

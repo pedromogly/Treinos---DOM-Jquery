@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - appendChild & removeChild</title>
+	
+</head>
+<body>
+	
+	<div id="nissan">
+	
+	</div>
+	
+	<script>
+	//o appendChild é um recurso de acrescentar um elemento html dentro de outro elemento.
+	//no caso estou acrescentando no elemento DIV um elemento P que está dentro de uma variavel também chamada p.
+	var p = document.createElement("p"); //criei uma variavel chamada 'p' que seu valor é um createElement.
+	p.innerHTML = "versa";
+	//acrescentando no console, um comando na variavel p... que é o texto "versa"
+	document.getElementById("nissan").appendChild(p);
+	//-------------------------------------------------------------
+	// bora fazer com uns carros também, vamos criar duas variaveis com o nome de dois carros.
+	var carro1 = document.createElement("h1");
+	carro1.innerHTML = "carro1";
+	
+	var carro2 = document.createElement("h1");
+	carro2.innerHTML = "carro2";
+	
+	//bora fazer o appendChild.
+	document.getElementById("nissan").appendChild(carro1);
+	document.getElementById("nissan").appendChild(carro2);
+	//--------------------------------------------------------------
+	//removeChild.
+	document.getElementById("nissan").removeChild(carro1);
+	
+	</script>
+</body>

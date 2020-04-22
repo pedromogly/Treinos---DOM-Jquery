@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - querySelector</title>
+	
+</head>
+<body>
+	<!-- Criando um grupo de tag,class,id -->
+	<div id="mermao">otario</div>
+	<div class="mermaos">otarios</div>
+	<p>Super Otarios</p>
+	<p class="diferentes">diferentinho</p>
+	
+	<script>
+		//O comando querySelector acessa todos de uma vez.
+		console.log (
+			document.querySelector("#otario") //acessando a id por '#' e nome
+			document.querySelector(".otarios") //acessando a class por '.' e nome
+			document.querySelector("p") //acessando o paragro 'p'
+			document.querySelector("p.diferentes") //acessando o paragro classe[ que é o '.'] e chamando o nome da classe
+			
+		//"Ah mas eu poderia usar o querySelector ao inves do getElements" mas o querySelector só retorna o primeiro indice...
+		//o querySelector não faz o array dos indices. SACOU?!
+		//suponhamos que eu crie varios class com o nome de "mermao" e atribua um valor diferente a cada uma. o querySelector
+		//só vai retornar o primeiro valor...
+		)
+	</script>
+
+
+</body>

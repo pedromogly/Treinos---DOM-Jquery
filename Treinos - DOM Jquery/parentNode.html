@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - parentNode</title>
+	
+</head>
+<body>
+	
+	<div id="microsoft">
+		<div class="windows8">
+			<div class="windowsStore"></div>
+		</div>
+		
+		<div class="windowsXp"></div>
+	</div>
+	
+	<script>
+	//parentNode acessa um elemento pai de determinado elementos especificos.
+		
+		console.log (
+		//suponhamos que queira saber qual é o elemento pai do windowsStore
+			document.querySelector(.windowsStore).parentNode //só solicitei e ele vai me retornar no console
+			//quanto mais eu solicitar, mais parentes "pai" ele vai retornar, vamos supor que quero saber o vô do windowsStore.
+			document.querySelector(.windowsStore).parentNode.parentNode
+		)
+	</script>
+</body>

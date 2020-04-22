@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - Variaveis</title>
+	
+</head>
+<body>
+	
+	</div>
+	
+	<script>
+		//toda variavel criada fora de qualquer função ou afins, é chamado de escopo global.
+		var nome = "imbecil";
+		
+		const nome3 = "babaovo"; // <--também há variaveis que não podem ser alteradas seu valor, chamadas de constante
+		//---------------------------------
+		console.log (nome);
+		
+		//só testando o subscrição de valor da variavel, eu posso trocar o valor dela dentro de um função[sobrescrever]
+		function test (){
+			//escopo local
+			nome = "otario";
+			//OBS: se eu criar uma variavel dentro de um escopo local dá erro por exemplo;
+			/*
+			function test() {
+				var nome = "babacao";
+			}
+			//se eu chamar no console vai dar erro.
+			*/
+		}
+		
+		//Mas então como eu crio uma variavel dentro de um escopo local, tipo function:
+		
+		function local (){
+			nome2 = "merda"
+		}
+		
+		test(); //chamando função test (tipo ligando)
+		local(); //chamando função local (liganduuu...)
+		console.log (nome);
+		console.log(nome2);
+	</script>
+</body>

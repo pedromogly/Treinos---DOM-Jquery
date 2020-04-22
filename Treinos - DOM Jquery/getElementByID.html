@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - getElementByID</title>
+	<!-- Tres formar de acessar um JS: -->
+	<script>
+		// O primeiro é já criando os comandos em js aqui mesmo no documento html. (vai ser iniciado antes do html)
+	</script>
+</head>
+<body>
+	<!-- Criei aqui duas div's para o getElementById acessar uma, lá pra baixo a gente vai ver como funciona. -->
+	<div id="time-pequeno">Curintia</div>
+	<div id="time-grande">Som Poulo</div>
+
+	<script>
+		// O segundo é acessando ele dentro da execução do <body> (Carregado no final do carregamento da pagina)
+		// Faremos a brincadeira do getElementId (Pegue e busque um elemento que corresponda x)
+		console.log ( //Ele vai retornar no console do navegador.
+			document.getElementById("time-pequeno") //ele acessou a Id
+			document.getElementById("time-pequeno").innerHTML //Agora acessou o texto dentro da div.
+		)
+	</script>
+
+	<script src="aplicacao.js"></script> <!-- (Carrega no final tbm) Já aqui estamos acessando via documento externo (prefiro assim) -->
+</body>

@@ -1,0 +1,4 @@
+ ** O que é o DOM? **
+ 
+ // Básicamente é a junção do próprio HTML com o JavaScript, básicamente ele junta os
+ comandos do JS para funcionalidade dos comandos do HTML, é easy.

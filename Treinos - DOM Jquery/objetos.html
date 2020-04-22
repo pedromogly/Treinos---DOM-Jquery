@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - objetos</title>
+	
+</head>
+<body>
+	
+	<script>
+	//agora vai ficar interessante, o que são objetos? (São super variaveis)
+	
+	//vou colocar ele dentro duma variavel
+	var carro = {
+		placa: 'ABC-4444',
+		modelo: 'sedan',
+		marca: 'fiat' //o ultimo indice nao coloca virgula
+	} //esse {} já define objeto
+	
+	//tambem da pra colocar indices dentro de indices de um objeto(supervariavel)
+	var consecionaria = {
+		fiat: {
+			uno: '5 mil',
+			toro: '50 mil'
+		},
+		renault: 'clio',
+		hyundai: 'HB20'
+	}
+	//como acesso a determinado indice? (placa ou modelo ou marca)?
+	console.log (carro.modelo);
+	
+	console.log (consecionaria.fiat.uno);
+	
+	</script>
+	
+</body>

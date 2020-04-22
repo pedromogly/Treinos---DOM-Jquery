@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM - querySelectorAll</title>
+	
+</head>
+<body>
+	<!-- eis aqui um grupo de classes com mesmo nome -->
+	<div class="teste">1</div>
+	<div class="teste">2</div>
+	<div class="teste">3</div>
+	<!-- eis aqui uma div pai que tem dentro as div class filhos -->
+	<div id="pai">
+		<div class="filho">1</div>
+		<div class="filho">2</div>
+		<div class="filho">3</div>
+	</div>
+	<!-- Essa aqui é pra ajudar nos tipos pra usar o comando heuhuehuehe -->
+	<p>oi</p>
+	<p>olá</p>
+	
+
+	<script>
+		console.log (
+			document.querySelectorAll(".teste") // aqui ele acessa todas as classes teste, faz um array deles no console.
+			
+		//Suponhamos que queremos acessar todas as classes filhos dentro do id pai... como faz?
+		
+			document.getElementById("pai").querySelectorAll(".filho")
+			//aaaah entendi!
+		)
+	
+	//bora brincar com um if
+		if (document.getElementById("pai").querySelectorAll(".filho")) {
+			console.log("CONSEGUI!");
+		}
+		
+		if (document.getElementById("pai").querySelectorAll(".filho") >= 1) {
+			console.log("oi")
+		}
+
+	</script>
+
+
+</body>
